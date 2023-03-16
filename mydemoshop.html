@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmart</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .nav{
+            text-align: center;
+            background-color: wheat;
+            color: black;
+            padding: 8px 0px;
+        }
+        .nav>h1>span{
+            color: green;
+        }
+        .nav>h1{
+            padding: 2px;
+            letter-spacing: 5px;
+            margin:0px 10px 5px 10px ;
+            text-align: center;
+        }
+        .nav>div>a{
+           text-decoration: none;
+           font-size: large;
+           padding: 10px;
+           width: 100px;
+           /* background-color: transparent; */
+           color: green;
+           margin: 20px;
+           font-weight: normal;
+        }
+        .nav>div>a:hover{
+            color: red;
+        }
+        .header{
+            background-color: rgb(2, 61, 25) ;
+            color: aliceblue;
+            text-align: center;
+            padding:10px;
+            margin: 8px 2px;
+            border-radius: 10px;
+            font-size: medium;
+            font-family: sans-serif;
+        }
+        .header+div {
+            display: flex;
+            padding: 50px;
+            overflow-x: scroll;
+        }
+        .product_images  img{
+            width: 220px;
+            height: 220px;
+            margin: 0px 5px;
+            border: 5px solid transparent;
+            padding: 3px;
+        }
+        .product_images img:hover{
+            border: 5px 2px ;
+            border-style: groove;
+            border-color: greenyellow;
+            border-radius: 1px;
+        }
+        .product_images::-webkit-scrollbar{
+            display: none;
+        }
+        .caption{
+            text-align: center;
+            color: black;
+            font-size: xx-large;
+            font-family: 'Times New Roman', Times, serif;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1><span>G</span>Mart</h1>
+        <div class="overf">
+            <a href="#fruits">Fruits & Veggies</a>
+            <a href="#Groceries">Groceries</a>
+            <a href="#Beverages">Beverages</a>
+            <a href="#dairy">Dairy Products</a>
+            <a href="#Egg Meat & Fish">Eggs Meat & Fish</a>
+            <a href="#Baby Care">Baby Care</a>
+            <a href="#Personal Care">Personal Care</a>
+            <a href="#GMart Specials">GMart Specials</a>
+        </div>
+    </div>
+    <div>
+        <h1 id="fruits" class="header">Fruits & Veggies</h1>
+        <div class="product_images">
+            <img src="/public/images/onion600.jpg" alt="onion image">
+            <img src="/public/images/50000482-3_1-fresho-cauliflower-organically-grown.webp" alt="cauliflower fresh">
+            <img src="/public/images/pomegranate.webp" alt="pomegranate">
+            <img src="/public/images/shimla.webp" alt="shimla">
+            <img src="/public/images/bluberry.webp" alt="bluberry">
+            <img src="/public/images/corn.webp" alt="corn">
+            <img src="/public/images/dragon.webp" alt="dragon fruit">
+            <img src="/public/images/orange.jfif" alt="pulpy orange">
+            <img src="/public/images/tomatos.jfif" alt="tomatos">
+        </div>
+    </div>
+    <div>
+        <h1 id="Groceries" class="header">Groceries</h1>
+        <div class="product_images">
+            <img src="/public/images/daal.webp" alt="toor dal">
+            <img src="/public/images/Tata-salt.jpg" alt="tata salt">
+            <img src="/public/images/fortune.webp" alt="mustard oil">
+            <img src="/public/images/madhur sugar.webp" alt="sugar">
+            <img src="/public/images/taj-mahal-tea-1-kg-product-images-o490001816-p490001816-1-202206061632.jpg" alt="tea">
+            <img src="/public/images/dawat basmati.webp" alt="rice">
+            <img src="/public/images/haldi.webp" alt="haldi">
+            <img src="/public/images/catch.webp" alt="catch haldi">
+        </div>
+    <div>
+        <h1 id="Beverages" class="header">Beverages</h1>
+        <div class="product_images">
+            <img src="/public/images/mirinda.webp" alt="mirinda">
+            <img src="/public/images/coocktails.webp" alt="coocktails">
+            <img src="/public/images/sting.webp" alt="sting">
+            <img src="/public/images/thumsup.webp" alt="thumsup">
+            <img src="/public/images/COLD CAFEE.webp" alt="Coldc">
+            <img src="/public/images/pepperboat.jfif" alt="pepperboat">
+            <img src="/public/images/breezer.webp" alt="breezer">
+            <img src="/public/images/realjuice.jfif" alt="realjuice">
+        </div>
+    </div>
+    <div>
+        <h1 id="dairy" class="header">Dairy Products</h1>
+        <div class="product_images">
+            <img src="/public/images/CHEEESE.webp" alt="chss">
+            <img src="public/images/CURD.webp" alt = "curd" >
+            <img src="public/images/PANEER.webp" alt = "PANEER" >
+            <img src="public/images/YOGURT.webp" alt = "YOGURT" >
+            <img src="public/images/NESTLE MILK.webp" alt = "nestl" >
+            <img src="public/images/doodh.jpg" alt = "curd" >
+            <img src="public/images/amul.webp" alt = "amul milk" >
+            <img src="public/images/buttermil.webp" alt = "buttermilk" >
+            <img src="public/images/classdahi.webp" alt = "curd" >
+
+        </div>
+    </div>
+    <div>
+        <h1 id="Egg Meat & Fish" class="header">Eggs Meat & Fish</h1>
+        <div class="product_images">
+            <img src="/public/images/fish.jpg" alt="fish">
+            <img src="public/images/chicken.webp" alt = "chicken" >
+            <img src="public/images/tuna.jpg" alt = "tuna" >
+            <img src="public/images/fish head.jpg" alt = "head" >
+            <img src="public/images/nuggets.jpg" alt = "nuggets" >
+            <img src="public/images/eggs.webp" alt = "eggs" >
+            <img src="public/images/afgani.webp" alt = "afgani" >
+            <img src="public/images/kadknath.jpg" alt = "kadknath" >
+            <img src="public/images/breastsss.webp" alt = "breastsss" >
+
+    </div>
+    <div>
+        <h1 id="Baby Care" class="header">Baby Care</h1>
+        <div class="product_images">
+            <img src="/public/images/bby combo.webp" alt="como">
+            <img src="public/images/bby shampoo.webp" alt = "shampoo" >
+            <img src="public/images/baby pdr.avif" alt = "powder" >
+            <img src="public/images/laal.webp" alt = "oil" >
+            <img src="public/images/milk bottle.jpeg" alt = "bottle" >
+            <img src="public/images/diapers.webp" alt = "diaper" >
+            <img src="public/images/jshampoo.webp" alt = "jshampoo" >
+            <img src="public/images/lactogen.webp" alt = "lactogen" >
+            <img src="public/images/soapbby.webp" alt = "soap" >
+    </div>
+    </div>
+    <div>
+        <h1 id="Personal Care" class="header">Personal Care</h1>
+        <div class="product_images">
+            <figure>
+            <img src="/public/images/nivea.webp" alt="nivea">
+            <figcaption class="caption">Nivea Lotion</figcaption>
+        </figure>
+            <img src="public/images/vitc.webp" alt = "vit c" >
+            <img src="public/images/vaseline.webp" alt = "vaseline" >
+            <img src="public/images/deo.webp" alt = "deo" >
+            <img src="public/images/aftershave.webp" alt = "aftershaev" >
+            <img src="public/images/foam.webp" alt = "foam" >
+            <img src="public/images/razor.webp" alt = "razor" >
+            <img src="public/images/perfume.webp" alt = "perfume" >
+            <img src="public/images/hairoil.webp" alt = "hairoil" >
+        
+    </div>
+    </div>
+    <div>
+        <h1 id="GMart Specials" class="header">GMart Specials</h1>
+        <div class="product_images">
+            <img src="/public/images/cardimom.webp" alt="cardimoo">
+            <img src="public/images/dhaniya.webp" alt = "dhaniya" >
+            <img src="public/images/aata.webp" alt = "ata" >
+            <img src="public/images/pistachos.webp" alt = "pista" >
+            <img src="public/images/sabudana.webp" alt = "sabudaaana" >
+            <img src="public/images/wipes.webp" alt = "wipes" >
+            <img src="/public/images/sonamnsu.webp" alt="rice">
+            <img src="/public/images/rai.webp" alt="mustard">
+    </div>
+    </div>
+    
+</body>
+</html> 
